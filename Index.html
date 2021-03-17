@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/Style.css">
+    <title>Colors Generator</title>
+</head>
+<body>
+    <div class="colors">
+        <!-- 1. First Color -->
+        <div class="color">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fa fa-sliders-h"></i></button>
+                <button class="lock"><i class="fa fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustment">X</button>
+                <span>Hue</span>
+                <input type="range" name="hue" min="0" max="360" step="1" class="hue-input" data-hue='0' >
+                <span>Brightness</span>
+                <input type="range" name="brightness" class="brightness-input" min="0" max="1" step=".01" data-brightness='0'>
+                <span>Saturation</span>
+                <input type="range" name="saturation" min="0" max="1" step=".01" data-saturation='0' class="saturation-input">
+            </div>
+        </div>
+        <!-- 2. Second Color -->
+        <div class="color">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fa fa-sliders-h"></i></button>
+                <button class="lock"><i class="fa fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustment">X</button>
+                <span>Hue</span>
+                <input type="range" name="hue" min="0" max="360" step="1" class="hue-input" data-hue='1' >
+                <span>Brightness</span>
+                <input type="range" name="brightness" class="brightness-input" min="0" max="1" step=".01" data-brightness='1'>
+                <span>Saturation</span>
+                <input type="range" name="saturation" min="0" max="1" step=".01" data-saturation='1' class="saturation-input">
+            </div>
+        </div>
+        <!-- 3. Third Color -->
+        <div class="color">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fa fa-sliders-h"></i></button>
+                <button class="lock"><i class="fa fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustment">X</button>
+                <span>Hue</span>
+                <input type="range" name="hue" min="0" max="360" step="1" class="hue-input" data-hue='2' >
+                <span>Brightness</span>
+                <input type="range" name="brightness" class="brightness-input" min="0" max="1" step=".01" data-brightness='2'>
+                <span>Saturation</span>
+                <input type="range" name="saturation" min="0" max="1" step=".01" data-saturation='2' class="saturation-input">
+            </div>
+        </div>
+        <!-- 4. Fourth Color -->
+        <div class="color">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fa fa-sliders-h"></i></button>
+                <button class="lock"><i class="fa fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustment">X</button>
+                <span>Hue</span>
+                <input type="range" name="hue" min="0" max="360" step="1" class="hue-input" data-hue='3' >
+                <span>Brightness</span>
+                <input type="range" name="brightness" class="brightness-input" min="0" max="1" step=".01" data-brightness='3'>
+                <span>Saturation</span>
+                <input type="range" name="saturation" min="0" max="1" step=".01" data-saturation='3' class="saturation-input">
+            </div>
+        </div>
+        <!-- 5. Fifth Color -->
+        <div class="color">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fa fa-sliders-h"></i></button>
+                <button class="lock"><i class="fa fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustment">X</button>
+                <span>Hue</span>
+                <input type="range" name="hue" min="0" max="360" step="1" class="hue-input" data-hue='4' >
+                <span>Brightness</span>
+                <input type="range" name="brightness" class="brightness-input" min="0" max="1" step=".01" data-brightness='4'>
+                <span>Saturation</span>
+                <input type="range" name="saturation" min="0" max="1" step=".01" data-saturation='4' class="saturation-input">
+            </div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="library-panel">
+            <button class="library"><i class="fa fa-book-open"></i></button>
+            <p>Library</p>
+        </div>
+        <div class="generate-panel">
+            <button class="generate"><i class="fa fa-sync"></i></button>
+            <p>Generate</p>
+        </div>
+        <div class="save-panel">
+            <button class="save"><i class="fa fa-save"></i></button>
+            <p>Save</p>
+        </div>
+    </div>
+
+    <!-- Popup Container -->
+    <div class="copy-container">
+        <div class="copy-popup">
+            <h3>Copied to Clipboard!</h3>
+            <h4>&#128077;</h4>
+        </div>
+        <div class="save-container">
+            <div class="save-popup">
+                <button class="close-save">X</button>
+                <h4>Give name to Palette</h4>
+                <input type="text" class="save-name">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+    <script src="./App.js"></script>
+</body>
+</html>
