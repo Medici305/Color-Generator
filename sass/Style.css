@@ -46,9 +46,6 @@ path {
   width: 80%;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(100px);
   transition: all 0.5s ease-in-out;
 }
 .sliders button {
@@ -110,6 +107,16 @@ path {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
 }
 
 /*# sourceMappingURL=Style.css.map */
